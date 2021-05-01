@@ -1,3 +1,4 @@
+# encoding=utf-8
 from __future__ import unicode_literals
 from indico.web.menu import TopMenuItem
 from indico.core import signals
