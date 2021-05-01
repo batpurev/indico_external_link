@@ -1,3 +1,4 @@
+from indico.web.menu import TopMenuItem
 from indico.core import signals
 from indico.core.plugins import IndicoPlugin
 
