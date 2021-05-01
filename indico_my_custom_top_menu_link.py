@@ -13,4 +13,4 @@ class MyCustomTopMenuLinkPlugin(IndicoPlugin):
         self.connect(signals.menu.items, self._extend_top_menu, sender='top-menu')
 
     def _extend_top_menu(self, sender, **kwargs):
-        return TopMenuItem('my-menu-item', 'Open Science homepage', 'https://www.openscience.mn', weight=95)
+        return TopMenuItem('my-menu-item', 'Google', 'https://www.google.com', weight=95)
