@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 from indico.web.menu import TopMenuItem
 from indico.core import signals
 from indico.core.plugins import IndicoPlugin
@@ -17,7 +18,8 @@ class MyCustomTopMenuLinkPlugin(IndicoPlugin):
     def _extend_top_menu(self, sender, **kwargs):
         return TopMenuItem('my-menu-item', 'Google', 'https://www.google.com', weight=105)
     def _inject_footer_links(self, **kwargs):
-        #return (' <a href=\'#\'>aaa</a> | <a href=\'#\'>bbb</a> | <a href=\'#\'>aaa</a> | <a href=\'#\'>ccc</a>')
-        yield '<a href="#">aaa</a>'
-        yield '<a href="#">bbb</a>'
-        yield '<a href="#">ccc</a>'
+        return '''
+        <a href="#">aaa</a></il>
+        <li><a href="#">bbb</a></il>
+        <li><a href="#">ccc</a>
+        '''
